@@ -1,0 +1,52 @@
+baseURL = 'https://overduse.github.io/'
+locale = 'zh-cn'
+title = "Haru's Blog"
+theme = 'PaperMod'
+
+paginate = 10
+summaryLength = 30
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  defaultTheme = 'auto'
+  dateFormat = '2006-01-02'
+
+  [params.homeInfoParams]
+    Title = "Hi there"
+    Content = "documenting my learning notes in this blog since 2026"
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/overduse'
+  [[params.socialIcons]]
+    name = 'rss'
+    url = '/index.xml'
+
+[[menu.main]]
+  name = 'Posts'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  name = 'Archive'
+  url = '/archives/'
+  weight = 20
+
+[[menu.main]]
+  name = 'Search'
+  url = '/search/'
+  weight = 30
+
+[[menu.main]]
+  name = 'Tags'
+  url = '/tags/'
+  weight = 40
